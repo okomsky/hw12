@@ -1,15 +1,18 @@
 package lesson1;
 
 public class Book {
-     private String nameOfTheBook;
+     private String authorName;
      private int ageOfPublication;
-     private class Author {}
+     private String nameOfTheBook;
 
      public Book(String nameOfTheBook, int ageOfPublication) {
+          this.authorName = authorName;
           this.nameOfTheBook = nameOfTheBook;
           this.ageOfPublication = ageOfPublication;
 
      }
+
+     public String getAuthorName() { return this.authorName;}
 
      public String getNameOfTheBook() {
           return this.nameOfTheBook;
