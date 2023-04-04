@@ -3,13 +3,12 @@ package lesson2;
 public class Book {
      private String authorName;
      private int ageOfPublication;
-     private final String nameOfTheBook;
+     private String nameOfTheBook;
 
-     public Book(String nameOfTheBook, int ageOfPublication) {
+     public Book(String nameOfTheBook, int ageOfPublication, String authorName) {
           this.authorName = authorName;
           this.nameOfTheBook = nameOfTheBook;
           this.ageOfPublication = ageOfPublication;
-
      }
 
      public String getAuthorName() {
@@ -30,7 +29,7 @@ public class Book {
 
      @Override
      public String toString() {
-          return ": " + nameOfTheBook + " (year of publication) " + ageOfPublication;
+          return authorName + ": " + nameOfTheBook + " (year of publication) " + ageOfPublication;
      }
 
      @Override
@@ -38,8 +37,8 @@ public class Book {
           if (this.getClass() != other.getClass()) {
                return false;
           }
-          Book c2 = (Book) other;
-          return nameOfTheBook.equals(c2.nameOfTheBook);
+          lesson1.Book c2 = (lesson1.Book) other;
+          return nameOfTheBook.equals(c2.getNameOfTheBook());
      }
 
      @Override

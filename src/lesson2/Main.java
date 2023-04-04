@@ -1,12 +1,12 @@
 package lesson2;
 
+import lesson1.Book;
+
 public class Main {
     public static void main(String[] args) {
-        Author chuckPalahniuk = new Author("Chuck Palahniuk");
-        Book haunted = new Book("Haunted", 2005);
-        Author georgeMartin = new Author("George Martin");
-        Book gameOfThrones = new Book("A Game of Thrones", 1996);
-        System.out.println(chuckPalahniuk + " " + haunted);
-        System.out.println(georgeMartin + " " + gameOfThrones);
+        lesson1.Book haunted = new Book("Haunted", 2005, "Chuck Palahniuk");
+        lesson1.Book gameOfThrones = new Book("A Game of Thrones",  1996, "George Martin");
+        System.out.println( " " + haunted);
+        System.out.println( " " + gameOfThrones);
     }
 }

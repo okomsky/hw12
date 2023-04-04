@@ -2,6 +2,8 @@ package lesson2;
 
 public class Author {
     private String authorName;
+    lesson1.Author chuckPalahniuk = new lesson1.Author("Chuck Palahniuk");
+    lesson1.Author georgeMartin = new lesson1.Author("George Martin");
 
     public Author(String authorName){
 
@@ -22,8 +24,8 @@ public class Author {
         if (this.getClass() != other.getClass()) {
             return false;
         }
-        Author c2 = (Author) other;
-        return authorName.equals(c2.authorName);
+        lesson1.Author c2 = (lesson1.Author) other;
+        return authorName.equals(c2.getAuthorName());
     }
 
     @Override
