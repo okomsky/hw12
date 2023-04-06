@@ -2,8 +2,6 @@ package lesson1;
 
 public class Author {
     private String authorName;
-    Author chuckPalahniuk = new Author("Chuck Palahniuk");
-    Author georgeMartin = new Author("George Martin");
 
     public Author(String authorName){
 
