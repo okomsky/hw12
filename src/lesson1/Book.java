@@ -43,6 +43,6 @@ public class Book {
 
      @Override
      public int hashCode() {
-          return java.util.Objects.hash(nameOfTheBook);
+          return java.util.Objects.hash(nameOfTheBook, authorName, ageOfPublication );
      }
 }
